@@ -1,0 +1,4 @@
+FROM adoptopenjdk/openjdk11:alpine-jre
+ADD target/netcare-*.jar /opt/netcare/netcare-0.0.1-SNAPSHOT.jar
+EXPOSE 8080
+CMD java -jar /opt/netcare/netcare-0.0.1-SNAPSHOT.jar
